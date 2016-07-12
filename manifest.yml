@@ -1,0 +1,6 @@
+applications:
+- name: watson-alchemy-demo
+  path: .
+  buildpack: go_buildpack
+  env:
+    GO15VENDOREXPERIMENT: 0
