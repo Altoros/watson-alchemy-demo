@@ -86,11 +86,11 @@ kango.addMessageListener('AnalyzeRes', function(evt) {
 
     $("#analyzeres").tabs();
     $.colorbox({inline:true, href:$("#analyzeres")});
-     //HACK: on first popup it messed up
-    //$.colorbox.close();
-    //setTimeout(function(){
-      //$.colorbox({inline:true, href:$("#analyzeres")});
-    //}, 1000);
+    //HACK: on first popup it messed up
+    $.colorbox.close();
+    setTimeout(function(){
+      $.colorbox({inline:true, href:$("#analyzeres")});
+    }, 1000);
   }
 });
 

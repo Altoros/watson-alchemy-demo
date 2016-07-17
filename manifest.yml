@@ -1,6 +1,12 @@
+declared-services:
+  alchemy_api_svc:
+    label: alchemy_api
+    plan: free
 applications:
 - name: watson-alchemy-demo
   path: .
   buildpack: go_buildpack
   env:
     GO15VENDOREXPERIMENT: 0
+  services:
+    - alchemy_api_svc
