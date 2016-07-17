@@ -1,0 +1,20 @@
+{
+    "content_scripts": ["content.js"], 
+    "description": "AlchemyLanguage demo", 
+    "creator": "stanislav.turlo@altoros.com", 
+    "background_scripts": [
+        "main.js"
+    ], 
+    "homepage_url": "http://blog.altoros.com", 
+    "version": "0.9.0", 
+    "browser_button": {
+        "caption": "AlchemyLanguage", 
+        "icon": "icons/button.png", 
+        "tooltipText": "Analyze text on current page"
+    }, 
+    "name": "Watson AlchemyLanguage Demo",
+    "permissions": {
+        "content_scripts": ["http://*/*", "https://*/*"],
+        "xhr": ["http://watson-alchemy-demo.mybluemix.net/*"]
+    }
+}
